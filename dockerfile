@@ -1,19 +1,19 @@
-# Usa imagen oficial de Node.js (elige una versión estable, aquí 18-alpine para imagen ligera)
+# Usa una imagen base de Node
 FROM node:18-alpine
 
 # Establece directorio de trabajo dentro del contenedor
 WORKDIR /usr/src/app
 
-# Copia archivos de dependencias
+# Copia archivos necesarios para instalar dependencias
 COPY package*.json ./
 
 # Instala dependencias
 RUN npm install
 
-# Copia todo el proyecto al contenedor
+# Copia el resto del proyecto
 COPY . .
 
-# Expone el puerto que usa tu app (por ejemplo 3000)
+# Expone el puerto (ajusta si usas otro)
 EXPOSE 3000
 
 # Comando para arrancar la app
