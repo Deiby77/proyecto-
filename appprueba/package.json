@@ -4,7 +4,8 @@
   "description": "autor: Harol Mauricio Gómez Zapata",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "keywords": [
     "app",
@@ -20,3 +21,6 @@
   },
   "type": "module"
 }
+
+
+
