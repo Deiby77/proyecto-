@@ -18,3 +18,5 @@ EXPOSE 3000
 
 # Comando para arrancar la app
 CMD ["npm", "start"]
+
+# Comando para arrancar 
